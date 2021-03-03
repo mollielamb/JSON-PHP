@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>AJAX/PHP/CURL/JSON example</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+		<meta name="author" content="Mollie Lamb">
+
+	</head>
+
+	<body>
+	
+	<table style="width:100%"> 
+		<tr>
+			<th>API name</th>
+			<th>API description</th>
+			<th></th>
+		</tr>
+		<tr style="text-align:center">
+			<td>1. Country Code</td>
+			<td>The country code of any given point</td>
+			<td><button id="btnCode">Run</button></td>
+		</tr>
+		<tr style="text-align:center">
+			<td>2. Weather</td>
+			<td>Displays nearby weather</td>
+			<td><button id="btnTemp">Run</button></td>
+		</tr>
+		<tr style="text-align:center">
+			<td>3. Timezone</td>
+			<td>The timezone at the lat/lng</td>
+			<td><button id="btnZone">Run</button></td>
+		</tr>
+	</table>
+
+		<br><br>
+
+		<div id="divResults">
+			
+			<table style="width:100%">
+
+				<tr>
+					<th>
+						Country 
+					</th>
+				
+					<th>
+						Weather
+					</th>
+
+					<th>
+						Time
+					</th>
+
+				</tr>
+				<tr>
+					<td id="txtCode" style="text-align:center">
+						
+					</td> 
+					<td id="txtTemp" style="text-align:center">
+						
+					</td>
+					<td id="txtZone" style="text-align:center">
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						
+					</td>
+					
+					<td id = "txtHumidity" style="text-align:center">
+						
+					</td>
+						
+					<td>
+				
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						
+					</td>
+					
+					<td id = "txtCondition" style="text-align:center">
+						
+					</td>
+						
+					<td>
+				
+					</td>
+					
+				</tr>
+
+			</table>
+
+		</div>
+		
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>
