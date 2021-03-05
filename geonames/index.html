@@ -9,7 +9,7 @@
 		<title>AJAX/PHP/CURL/JSON example</title>
 		<meta name="description" content="AJAX/PHP/CURL/JSON example">
 		<meta name="author" content="Mollie Lamb">
-
+	
 	</head>
 
 	<body>
@@ -23,17 +23,34 @@
 		<tr style="text-align:center">
 			<td>1. Country Code</td>
 			<td>The country code of any given point</td>
-			<td><button id="btnCode">Run</button></td>
+			<td rowspan="2">
+			<label for="lat">Latitude:</label>
+			<input type="number" step="0.01" id="lat" name="lat">
+			<label for="lng">Latitude:</label>
+			<input type="number" step="0.01" id="lng" name="lng"><br><br>
+			<button id="btnCode">Country Code</button>
+			<button id="btnZone">Timezone</button>
+			</td>
 		</tr>
 		<tr style="text-align:center">
-			<td>2. Weather</td>
-			<td>Displays nearby weather</td>
-			<td><button id="btnTemp">Run</button></td>
-		</tr>
-		<tr style="text-align:center">
-			<td>3. Timezone</td>
+			<td>2. Timezone</td>
 			<td>The timezone at the lat/lng</td>
-			<td><button id="btnZone">Run</button></td>
+			
+		</tr>
+		<tr style="text-align:center">
+			<td>3. Weather</td>
+			<td>Displays nearby weather</td>
+			<td>
+			<label for="north">North:</label>
+			<input type="number" step="0.01" id="north" name="north">
+			<label for="south">South:</label>
+			<input type="number" step="0.01" id="south" name="south">
+			<label for="east">East:</label>
+			<input type="number" step="0.01" id="east" name="east">
+			<label for="west">West:</label>
+			<input type="number" step="0.01" id="west" name="west"><br><br>
+			<button id="btnTemp">Weather</button>
+			</td>
 		</tr>
 	</table>
 
@@ -49,11 +66,11 @@
 					</th>
 				
 					<th>
-						Weather
+						Time
 					</th>
 
 					<th>
-						Time
+						Weather
 					</th>
 
 				</tr>
@@ -61,38 +78,36 @@
 					<td id="txtCode" style="text-align:center">
 						
 					</td> 
-					<td id="txtTemp" style="text-align:center">
-						
 					</td>
 					<td id="txtZone" style="text-align:center">
 						
 					</td>
+					<td id="txtTemp" style="text-align:center">
+					</td>
+						
 				</tr>
 				<tr>
 					<td>
 						
 					</td>
-					
+					<td>
+						
+					</td>
+						
 					<td id = "txtHumidity" style="text-align:center">
-						
 					</td>
-						
-					<td>
-				
-					</td>
-					
+			
 				</tr>
 				<tr>
 					<td>
 						
 					</td>
-					
+					<td>
+						
+					</td>
+						
 					<td id = "txtCondition" style="text-align:center">
 						
-					</td>
-						
-					<td>
-				
 					</td>
 					
 				</tr>
